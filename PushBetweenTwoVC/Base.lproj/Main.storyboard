@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e89-BW-sTv">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tap here-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PushBetweenTwoVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-kz-VKH">
+                                <rect key="frame" x="0.0" y="0.0" width="518" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUG-eq-ELI">
+                                <rect key="frame" x="81" y="198" width="212" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="qZK-k5-jYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="pushViewController"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VT-mI-2mL">
+                                <rect key="frame" x="81" y="374" width="212" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="7OR-Zg-Xt6"/>
+                                    <constraint firstAttribute="width" constant="212" id="Wct-xX-22a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="present"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cUG-eq-ELI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="9U6-fM-EbB"/>
+                            <constraint firstAttribute="bottom" secondItem="S6L-kz-VKH" secondAttribute="bottom" id="FtV-IQ-46P"/>
+                            <constraint firstItem="cUG-eq-ELI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="JRC-rV-JOP"/>
+                            <constraint firstItem="cUG-eq-ELI" firstAttribute="trailing" secondItem="2VT-mI-2mL" secondAttribute="trailing" id="WUd-zO-FQ9"/>
+                            <constraint firstItem="cUG-eq-ELI" firstAttribute="leading" secondItem="2VT-mI-2mL" secondAttribute="leading" id="Zqh-wj-Mg3"/>
+                            <constraint firstAttribute="trailing" secondItem="S6L-kz-VKH" secondAttribute="trailing" id="aWx-cO-K1Y"/>
+                            <constraint firstItem="2VT-mI-2mL" firstAttribute="top" secondItem="cUG-eq-ELI" secondAttribute="bottom" constant="34" id="cTh-bo-1E8"/>
+                            <constraint firstItem="S6L-kz-VKH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pV0-ni-AJO"/>
+                            <constraint firstItem="S6L-kz-VKH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sEz-ni-Eaz"/>
+                            <constraint firstItem="cUG-eq-ELI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1M-J5-hnV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tap here" id="7ol-rU-J1M">
+                        <barButtonItem key="backBarButtonItem" title="BACK" id="jeT-ap-Tgu"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="button" destination="cUG-eq-ELI" id="ARu-Xz-1UN"/>
+                        <outlet property="presentButton" destination="2VT-mI-2mL" id="C1n-JU-Efb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--FlyVC-->
+        <scene sceneID="245-86-42w">
+            <objects>
+                <viewController storyboardIdentifier="fly" id="1Nv-uc-2na" customClass="FlyVC" customModule="PushBetweenTwoVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhC-SJ-Csk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fly" translatesAutoresizingMaskIntoConstraints="NO" id="kP5-qN-lgf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siA-p5-weT">
+                                <rect key="frame" x="81" y="382" width="252" height="142"/>
+                                <color key="backgroundColor" red="0.69590264558792114" green="0.40834546089172363" blue="0.24587410688400269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="vIj-sd-0Q2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="flyTap:" destination="1Nv-uc-2na" eventType="touchUpInside" id="4pt-Q6-RVB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kP5-qN-lgf" firstAttribute="trailing" secondItem="eIQ-c8-I0Y" secondAttribute="trailing" id="7Ao-BT-UQR"/>
+                            <constraint firstItem="kP5-qN-lgf" firstAttribute="leading" secondItem="eIQ-c8-I0Y" secondAttribute="leading" id="BWl-7y-489"/>
+                            <constraint firstItem="siA-p5-weT" firstAttribute="centerY" secondItem="eIQ-c8-I0Y" secondAttribute="centerY" id="MAY-4q-OoB"/>
+                            <constraint firstItem="siA-p5-weT" firstAttribute="leading" secondItem="eIQ-c8-I0Y" secondAttribute="leading" constant="81" id="eDD-g9-m7a"/>
+                            <constraint firstItem="siA-p5-weT" firstAttribute="centerX" secondItem="kP5-qN-lgf" secondAttribute="centerX" id="hWv-11-Jq3"/>
+                            <constraint firstAttribute="bottom" secondItem="kP5-qN-lgf" secondAttribute="bottom" id="hkG-uD-KjP"/>
+                            <constraint firstItem="kP5-qN-lgf" firstAttribute="top" secondItem="qhC-SJ-Csk" secondAttribute="top" id="vo8-uW-teS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eIQ-c8-I0Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="siA-p5-weT" id="HXW-YE-oda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07h-Xm-3xX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="912.5937031484259"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="Qer-ls-YvH">
+            <objects>
+                <viewController storyboardIdentifier="photoSB" id="vL6-BD-XJD" customClass="SecondVC" customModule="PushBetweenTwoVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9HG-9V-0QO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios" translatesAutoresizingMaskIntoConstraints="NO" id="7vd-o8-V1y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7vd-o8-V1y" secondAttribute="bottom" id="89l-Im-xOP"/>
+                            <constraint firstItem="7vd-o8-V1y" firstAttribute="leading" secondItem="Zxt-8f-AhQ" secondAttribute="leading" id="KTa-hH-7EN"/>
+                            <constraint firstItem="Zxt-8f-AhQ" firstAttribute="trailing" secondItem="7vd-o8-V1y" secondAttribute="trailing" id="s6a-4b-MZ5"/>
+                            <constraint firstItem="7vd-o8-V1y" firstAttribute="top" secondItem="9HG-9V-0QO" secondAttribute="top" id="wfO-9o-hLf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zxt-8f-AhQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8R-iB-qsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r0t-AY-zR9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e89-BW-sTv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="hgB-RV-lFf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G2f-r0-Ct5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hf-4M-gmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fly" width="337.49295043945312" height="731.384765625"/>
+        <image name="ios" width="1301" height="2820"/>
+        <image name="one" width="518.4000244140625" height="1094.4000244140625"/>
+    </resources>
+</document>
